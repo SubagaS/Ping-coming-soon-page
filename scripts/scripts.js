@@ -8,16 +8,16 @@ function showMessage(e) {
   e.preventDefault();
   if (emailInput.value === '') {
     emptyError.classList.remove('hidden');
-    emailInput.classList.add('invalid');
+    emailInput.style.border = 'solid 2px var(--red-400)';
   } else if (!emailInput.checkValidity()) {
     invalidEmailError.classList.remove('hidden');
     emptyError.classList.add('hidden');
-    emailInput.classList.add('invalid');
+    emailInput.style.border = 'solid 2px var(--red-400)';
   } else {
     successMessage.classList.remove('hidden');
     emptyError.classList.add('hidden');
     invalidEmailError.classList.add('hidden');
-    emailInput.classList.add('valid');
+    emailInput.style.border = 'solid 2px green';
   }
 }
 
