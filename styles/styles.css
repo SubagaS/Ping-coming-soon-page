@@ -1,0 +1,142 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 20px;
+  font-family: 'Libre Franklin';
+}
+
+:root {
+  --blue-500: hsl(223, 87%, 63%);
+  --blue-200: hsl(223, 100%, 88%);
+  --red-400: hsl(354, 100%, 66%);
+  --gray-400: hsl(0, 0%, 59%);
+  --blue-950: hsl(209, 33%, 12%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 16rem;
+  margin-top: 4.25rem;
+}
+
+.ping-logo {
+  width: 2.65rem;
+  height: 0.75rem;
+}
+
+.text-info-container {
+  margin: 2rem 0;
+  text-align: center;
+  line-height: 125%;
+
+  p:first-child {
+    font-size: 1rem;
+    color: var(--gray-400);
+    strong {
+      color: var(--blue-950);
+    }
+  }
+  p:last-child {
+    font-size: 0.6rem;
+  }
+}
+.form-container {
+  width: 90%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    height: 2rem;
+    padding: 0 1.2rem;
+    border: solid 2px var(--blue-200);
+    border-radius: 1.4rem;
+    font-family: inherit;
+    caret-color: var(--blue-200);
+    outline: none;
+
+    &::placeholder {
+      color: var(--blue-200);
+    }
+    &:focus {
+      border: solid 2px var(--blue-500);
+    }
+  }
+  button {
+    height: 2rem;
+    border-radius: 1.4rem;
+    background-color: var(--blue-500);
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+.illustration-dashboard {
+  width: 100%;
+  height: 9.6rem;
+  margin-top: 3.6rem;
+}
+
+footer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.links {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: solid 2px var(--blue-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    color: var(--blue-500);
+  }
+}
+
+.copyright-p {
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  line-height: 125%;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
