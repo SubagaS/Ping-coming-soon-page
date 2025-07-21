@@ -33,14 +33,24 @@
       </div>
       <div class="form-container">
         <form novalidate>
-          <label for="email">
-            <input
-              type="email"
-              id="email"
-              name="email-address"
-              placeholder="Your email address"
-            />
-          </label>
+          <input
+            type="email"
+            id="email"
+            name="email-address"
+            placeholder="Your email address"
+          />
+
+          <div class="empty-error hidden">
+            <p>Whoops! It looks like you forgot to add your email</p>
+          </div>
+          <div class="invalid-email-error hidden">
+            <p>Please provide a valid email address</p>
+          </div>
+
+          <div class="success-message hidden">
+            <p>Thank you for subscribing!</p>
+          </div>
+
           <button type="submit">Notify Me</button>
         </form>
       </div>

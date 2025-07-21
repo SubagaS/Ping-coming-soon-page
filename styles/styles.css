@@ -62,10 +62,10 @@ body {
   form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.4rem;
     width: 100%;
   }
-
   input {
     width: 100%;
     height: 2rem;
@@ -84,6 +84,7 @@ body {
     }
   }
   button {
+    width: 100%;
     height: 2rem;
     border-radius: 1.4rem;
     background-color: var(--blue-500);
@@ -92,6 +93,31 @@ body {
     font-weight: 600;
     color: white;
   }
+}
+
+.empty-error,
+.invalid-email-error {
+  font-size: 0.55rem;
+  text-align: left;
+  color: var(--red-400);
+}
+
+.success-message {
+  font-size: 0.55rem;
+  text-align: left;
+  color: green;
+}
+
+input.invalid {
+  border: solid 2px var(--red-400);
+}
+
+input.valid {
+  border: solid 2px green;
+}
+
+.hidden {
+  display: none;
 }
 
 .illustration-dashboard {
